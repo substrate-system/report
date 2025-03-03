@@ -1,7 +1,7 @@
 import { test } from '@substrate-system/tapzero'
-import { example } from '../src/index.js'
+import { report } from '../src/index.js'
 
-test('example', async t => {
-    t.ok('ok', 'should be an example')
-    example()
+test('report', async t => {
+    const data = report()
+    t.ok(data.browser, 'should return the report data')
 })
