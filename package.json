@@ -1,7 +1,6 @@
 {
   "name": "@substrate-system/report",
   "description": "Browser info report",
-  "private": true,
   "type": "module",
   "version": "0.0.0",
   "main": "dist/index.js",
