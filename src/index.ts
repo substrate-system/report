@@ -1,6 +1,3 @@
-import { createDebug } from '@substrate-system/debug'
-const debug = createDebug()
-
 export type Report = {
     viewport:{
         width:number;
@@ -12,11 +9,12 @@ export type Report = {
     },
     cookies,
     os,
-    screen:{ width:number; height:number; colors; dppx; }
+    screen:{ width:number; height:number; colors; dppx; };
+    lang:readonly string[];
+    timestamp:string;
 }
 
 export function report (userAgent?:Navigator['userAgent']):Report {
-    debug('hello')
     userAgent = userAgent || navigator.userAgent
 
     const browser:{ name:string, version?:string } = { name: '', version: '' }
@@ -384,11 +382,19 @@ export function report (userAgent?:Navigator['userAgent']):Report {
         screenData.dppx = 1
     }
 
+    // preferred language(s) for displaying pages
+    const lang = navigator.languages || navigator.language
+
+    // local date, time, and time zone
+    const timestamp = (new Date()).toString()
+
     return {
         browser,
         viewport,
         cookies,
         os,
-        screen: screenData
+        screen: screenData,
+        lang,
+        timestamp
     }
 }
