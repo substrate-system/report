@@ -14,7 +14,18 @@ Get browser & OS info. Based on [keithws/browser-report](https://github.com/keit
 [See a live demo](https://substrate-system.github.io/report/)
 
 <details><summary><h2>Contents</h2></summary>
+
 <!-- toc -->
+
+- [Install](#install)
+- [Modules](#modules)
+  * [ESM](#esm)
+  * [Common JS](#common-js)
+  * [pre-built JS](#pre-built-js)
+- [Use](#use)
+
+<!-- tocstop -->
+
 </details>
 
 ## Install
