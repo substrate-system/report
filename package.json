@@ -75,7 +75,8 @@
     "report",
     "os",
     "browser",
-    "platform"
+    "platform",
+    "userAgent"
   ],
   "bugs": {
     "url": "https://github.com/substrate-system/report/issues"
