@@ -6,10 +6,11 @@
 [![Common Changelog](https://nichoth.github.io/badge/common-changelog.svg)](./CHANGELOG.md)
 [![install size](https://flat.badgen.net/packagephobia/install/@substrate-system/report?)](https://packagephobia.com/result?p=@substrate-system/report)
 [![dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen.svg?style=flat-square)](package.json)
-[![license](https://img.shields.io/badge/license-Polyform_Non_Commercial-26bc71?style=flat-square)](LICENSE)
+[![license](https://img.shields.io/badge/license-Big_Time-blue?style=flat-square)](LICENSE)
 
 
-Get browser & OS info. Based on [keithws/browser-report](https://github.com/keithws/browser-report).
+Get browser & OS info. Based on
+[keithws/browser-report](https://github.com/keithws/browser-report).
 
 [See a live demo](https://substrate-system.github.io/report/)
 
